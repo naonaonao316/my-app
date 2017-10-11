@@ -1,0 +1,32 @@
+<html>
+<head>
+  <style>
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 40px);
+    grid-gap: 10px;
+    grid-template-areas:
+      "header header header"
+      "nav    main   sidebar"
+      "footer footer footer";
+  }
+  .item {
+    background-color: green;
+    text-align: center;
+  }
+  .item_header {grid-area:header;}
+  .item_nav {grid-area:nav;}
+  .item_main {grid-area:main;}
+  .item_sidebar {grid-area:sidebar;}
+  .item_footer {grid-area:footer;}
+  </style>
+</head>
+<div class="container">
+  <div class="item item_header">header</div>
+  <div class="item item_nav">nav</div>
+  <div class="item item_main">main</div>
+  <div class="item item_sidebar">sidebar</div>
+  <div class="item item_footer">footer</div>
+</div>
+</html>
